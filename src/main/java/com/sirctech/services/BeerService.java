@@ -6,4 +6,10 @@ import com.sirctech.web.models.BeerDto;
 
 public interface BeerService {
 	BeerDto getBeerById(UUID beerId);
+
+	BeerDto saveBeer(BeerDto beerDto);
+
+	BeerDto updateBeer(BeerDto beerDto);
+
+	void deleteBeer(UUID beerId);
 }
