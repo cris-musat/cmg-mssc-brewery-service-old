@@ -10,7 +10,7 @@ import com.sirctech.web.models.BeerDto;
 public class BeerServiceImpl implements BeerService {
 
 	public BeerDto getBeerById(UUID beerId) {
-		return BeerDto.builder().id(UUID.randomUUID()).name("beer name").style("beer style").build();
+		return BeerDto.builder().id(UUID.randomUUID()).name("beer - rest service").style("style beer - rest serice").build();
 	}
 
 	public BeerDto saveBeer(BeerDto beerDto) {
